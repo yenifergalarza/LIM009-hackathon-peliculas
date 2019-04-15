@@ -33,7 +33,7 @@ uno de pelis de terror... o... ¡lo que quieras!
 
 * Este proyecto se debe resolver en equipos de hasta 4 personas.
 * Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-* Tiempo para completar el reto: 4 días.
+* Tiempo para completar el reto: 3 días.
 * Habrán dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
 
 ## Objetivos de aprendizaje
@@ -68,15 +68,15 @@ propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/v
 
 ## Horario
 
-|       |  Martes           | Miércoles                    | Jueves                        | Viernes                               |
+|       |  Lunes           | Martes                   | Miércoles                        | 
 |------ | ------------------| ---------------------------- | ----------------------------- | ------------------------------------- |
-| 8:00  | Kick off hackaton | Daily por squad              | Daily por squad               | Detalles finales                      |
-| 9:00  | Sesión de planificación  | Hackeo                       | Hackeo                 | Feria de demostraciones               |
-| 10:00 | Hackeo            | Compartir link de aplicación | Inscripción de aplicaciones   | Presentación de mejores squads        |
-| 11:00 |                   | Presentación y Feedback      |                               | Deliberación del jurado               |
-| 12:00 |                   |                              |                               |                                       |
-|>13:00 |                   |                              |                               |                                       |
-| 20:00 |                   |                              | Cierre de inscripciones       |                                       |
+| 8:00  | Kick off hackaton | Daily por squad              |   Hackeo                      |      
+| 9:00  | Sesión de planificación  | Hackeo                |   Detalles finales            | 
+| 10:00 | Hackeo            | Compartir link de aplicación | Feria de demostraciones       |
+| 11:00 |                   | Presentación y Feedback      | Presentación de mejores squads|    
+| 12:00 |                   |                              |     Deliberación del jurado   |                                
+|>13:00 |                   |                              |                               |                                
+| 20:00 |                   |                              |                               |                       
 
 ## Tips para la organización de trabajo entre UX y Front end 
 

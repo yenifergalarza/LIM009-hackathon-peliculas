@@ -68,8 +68,8 @@ propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/v
 
 ## Horario
 
-|       |  Lunes           | Martes                   | Miércoles                        | 
-|------ | ------------------| ---------------------------- | ----------------------------- | ------------------------------------- |
+|       |  Lunes            | Martes                       | Miércoles                     | 
+|------ | ------------------| ---------------------------- | ----------------------------- | 
 | 8:00  | Kick off hackaton | Daily por squad              |   Hackeo                      |      
 | 9:00  | Sesión de planificación  | Hackeo                |   Detalles finales            | 
 | 10:00 | Hackeo            | Compartir link de aplicación | Feria de demostraciones       |

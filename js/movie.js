@@ -9,10 +9,17 @@ btnSearch.addEventListener('click', () => {
 });
 const drawMovie = element => {
   const html = `
-  <div class="conteiner-movie">
-      <h3>${element.Title}</h3>
-      <img src="${element.Poster}"/>
-  </div>
+  <div class="card">
+  <img src="${element.Poster}" class="card-img-top" > 
+  <div class="card-body card-header">
+  <p class="card-title whiteText" >${element.Title}</p>
+  </div>  
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item" > Tipo : ${element.Type}</li>
+  <li class="list-group-item" > Año : ${element.Year}</li>
+  <li class="list-group-item" > ImdbID : ${element.imdbID}</li>
+  </ul>
+  </div> 
   `;
   conteiner.insertAdjacentHTML('beforeEnd', html);
 };
@@ -21,13 +28,10 @@ const limpiar = () => {
   document.getElementById('Search').reset();
 };
 const printCinema = document.getElementById("rootCard");
-fetch("https://www.omdbapi.com/?apikey=ea8492c7&s=batman")
-  .then(resp => { return resp.json(); })
-  .then(data => console.log(data.Search))
 
 const eachMovieSeries = (movie) => {
   for (let cinemaCount = 0; cinemaCount < movie.length; cinemaCount++) {
-    if (movie[cinemaCount].hasOwnProperty('Title')) {
+    if (movie[cinemaCount].Poster !== "N/A") {
       printCinema.innerHTML += `
          <div class="card">
        <img src="${movie[cinemaCount].Poster}" class="card-img-top" > 
@@ -35,22 +39,22 @@ const eachMovieSeries = (movie) => {
        <p class="card-title whiteText" >${movie[cinemaCount].Title}</p>
        </div>  
        <ul class="list-group list-group-flush">
-   
+       <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
        <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
-     
+       <li class="list-group-item" > ImdbID : ${movie[cinemaCount].imdbID}</li>
        </ul>
        </div> `
     } else {
       printCinema.innerHTML += `
          <div class="card" ">
-       <img src="${movie[cinemaCount].Poster}" class="card-img-top" > 
+       <img src="./assets/notFound.jpg" class="card-img-top" > 
        <div class="card-body card-header">
        <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
        </div>
        <ul class="list-group list-group-flush">
-     
+       <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
        <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
-      
+       <li class="list-group-item" > ImdbID : ${movie[cinemaCount].imdbID}</li>
        </ul>
        </div> `
     }
@@ -79,7 +83,10 @@ function traer(title) {
     .then(data => getDataUpPoke(data.Search))
     .catch(error => console.log("Error", error)).catch(error => console.log("Error", error))
 };
-traer(); AzButton.addEventListener("click", () => { traer(title) });
+ AzButton.addEventListener("click", () => { 
+  const search = document.getElementById('searchText').value;
+  const SearchMovie = encodeURIComponent(search); 
+  traer(SearchMovie) });
 function traer1(title) {
   fetch(`https://www.omdbapi.com/?s="${title}"&apikey=ea8492c7`)
     .then(resp => { return resp.json() })
@@ -88,4 +95,7 @@ function traer1(title) {
 };
 const ZaButton = document.getElementById("ZaButton");
 ZaButton.addEventListener("click",
-  () => { traer1(title) }); 
+  () => {
+    const search = document.getElementById('searchText').value;
+  const SearchMovie = encodeURIComponent(search);  
+    traer1(SearchMovie) }); 

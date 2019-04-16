@@ -1,6 +1,56 @@
+/* https://www.youtube.com/watch?v=YonqjrU2btI  https://www.youtube.com/watch?v=67eJTr6_ylY   */
 .flex-nav{
     flex-direction: row-reverse !important;
 }
 
+.row{
+    margin-left: 0 !important;
+}
 .card {
-    width: 33% !important;}
+   
+    width: 43% !important;
+    margin: 3%;
+}
+
+
+.card-img-top {
+height: 52% !important;}
+
+@media (min-width: 299px) {
+    .card {
+        width: 70% !important;
+        margin-left: 15% !important;
+       
+    }
+}
+
+@media (min-width: 420px) {
+    .card {
+        
+         margin-left: 6% !important;
+    }
+}
+
+@media (min-width: 660px) {
+
+    .card {
+        width: 25% !important;
+        
+         margin-left: 3% !important;
+    }
+}
+
+
+@media (min-width: 880px) {
+    .card {
+        width: 19% !important;
+     
+        margin-left: 1.5% !important;
+    }
+    
+    .row{
+        padding-left: 7%;
+        padding-right: 0%;
+    }
+
+}

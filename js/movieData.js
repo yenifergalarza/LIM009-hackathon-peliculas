@@ -15,11 +15,26 @@ function sortArrsToObjects(a, b) {
   window.sortArrsToObjects = sortArrsToObjects;
   
   
-  const filterMovie = (data, tipo) => {
+  
+  const getConnection = (busqueda) => {
+    
+    const URL=`http://www.omdbapi.com/?s=${busqueda}&apikey=e41750ae`;
+
+    fetch(URL).then(Response=> Response.json())
+    .then(Response=>{let resul=Response.Search
+        resul.forEach(element => {
+            drawMovie(element);
+            
+        });
+    })
+
+
+}
+
+const filterMovie = (data, tipo) => {
     const arrayT = data.filter(oneMovie => oneMovie.type === tipo || (Array.isArray(oneMovie.type) && oneMovie.type.includes(tipo)));
     return arrayT;
   
-  }
-  
-  
+  }  
   window.filterMovie = filterMovie;
+  window.getConnection = getConnection;

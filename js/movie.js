@@ -1,3 +1,25 @@
+const btnSearch=document.getElementById('btnSearch');
+const conteiner=document.getElementById('rootCard');
+btnSearch.addEventListener('click', ()=>{
+    conteiner.innerHTML='';
+    const search=document.getElementById('searchText').value;
+    const SearchMovie=encodeURIComponent(search);
+    window.getConnection(SearchMovie);
+    limpiar();
+});
+const drawMovie= element=>{
+  const html=`
+  <div class="conteiner-movie">
+      <h3>${element.Title}</h3>
+      <img src="${element.Poster}"/>
+  </div>
+  `;
+  conteiner.insertAdjacentHTML('beforeEnd',html);
+}
+
+const limpiar=()=>{
+document.getElementById('Search').reset();
+};
 const printCinema = document.getElementById("rootCard");
    fetch("http://www.omdbapi.com/?apikey=ea8492c7&s=batman") 	
    .then(resp =>{return resp.json();})	
@@ -56,7 +78,7 @@ const printCinema = document.getElementById("rootCard");
    .then(resp =>{return resp.json()})
    .then(data=> getDataUpPoke(data.Search))
     .catch(error=>console.log("Error",error))	   .catch(error=>console.log("Error",error))
- };	};
+ };
  traer(); 	AzButton.addEventListener("click",()=>{traer(title)});
   function traer1 (title){
      fetch(`https://www.omdbapi.com/?s="${title}"&apikey=ea8492c7`) 

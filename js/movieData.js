@@ -18,7 +18,7 @@ window.sortArrsToObjects = sortArrsToObjects;
 
 const getConnection = (busqueda) => {
 
-  const URL = `http://www.omdbapi.com/?s=${busqueda}&apikey=e41750ae`;
+  const URL = `https://www.omdbapi.com/?s=${busqueda}&apikey=e41750ae`;
 
   fetch(URL).then(Response => Response.json())
     .then(Response => {

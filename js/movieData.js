@@ -1,5 +1,5 @@
 
-function sortArrsToObjects(a, b) { debugger
+function sortArrsToObjects(a, b) { 
     a = a.Title;
     b = b.Title;
   

@@ -21,7 +21,7 @@ const limpiar=()=>{
 document.getElementById('Search').reset();
 };
 const printCinema = document.getElementById("rootCard");
-   fetch("http://www.omdbapi.com/?apikey=ea8492c7&s=batman") 	
+   fetch("https://www.omdbapi.com/?apikey=ea8492c7&s=batman") 	
    .then(resp =>{return resp.json();})	
     .then(data=> console.log(data.Search))	
  

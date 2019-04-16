@@ -17,8 +17,39 @@ const printCinema = document.getElementById("rootCard");
   
       <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
     
+  
       </ul>
-      </div> `
+      </div> 
+    
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">${movie[cinemaCount].Title}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <img src="${movie[cinemaCount].Poster}" class="card-img-top" > 
+      Año : ${movie[cinemaCount].Year}
+       ImdbID : ${movie[cinemaCount].imdbID}
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      `
      } else {
        printCinema.innerHTML += `
         <div class="card" ">
@@ -57,9 +88,10 @@ const getDataDownPoke = (data)=>{
   }
 const searchTitle = document.getElementById("searchTitle");
 
-const AzButton =document.getElementById("AzButton")
+const searchButton =document.getElementById("searchButton")
 
-const title = "game of thrones"
+const title ="mick";
+
 function traer (title){
   fetch(`https://www.omdbapi.com/?s="${title}"&apikey=ea8492c7 `) 
   .then(resp =>{return resp.json()})

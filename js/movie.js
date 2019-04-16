@@ -15,7 +15,7 @@ const drawMovie = element => {
   </div>
   `;
   conteiner.insertAdjacentHTML('beforeEnd', html);
-}
+};
 
 const limpiar = () => {
   document.getElementById('Search').reset();

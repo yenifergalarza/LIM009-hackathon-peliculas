@@ -1,0 +1,6 @@
+.flex-nav{
+    flex-direction: row-reverse !important;
+}
+
+.card {
+    width: 33% !important;}

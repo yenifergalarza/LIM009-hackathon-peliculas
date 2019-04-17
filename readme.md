@@ -1,96 +1,244 @@
-# "Hackathon" de final de _Common Core_, películas
+# **CINEMATIVA**
 
-## Índice
+## DEFINICIÓN DEL PRODUCTO
 
-* [Preámbulo](#preámbulo)
-* [Resumen del proyecto](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Consideraciones técnicas](#consideraciones-técnicas)
+**CINEMATIVA** es una plataforma web que presenta información esencial acerca de las películas y/o series.
+## OBJETIVO DEL PRODUCTO
 
- ***
+El problema del usuario es que desconoce información de las películas y/o series. Es por ello que **CINEMATIVA** presenta, como solución, información de las películas y/o series que permitirá a los usuarios determinar que ver. 
 
-## Preámbulo
+## USUARIOS
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+**CINEMATIVA** está dirigido a toda la población que estén interesados en conocer información sobre las películas y/o series, para poder elegir y disfrutar de los contenidos de éstos.
 
- ![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+## PROCESO DE DISEÑO
 
-## Resumen del proyecto
+1. Se realizó una encuesta a la población en general, para conocer las preferencias de los usuarios al momento de elegir una película y/o serie.
 
-Durante estos días crearás el producto que tú quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en Netflix,
-uno de pelis de terror... o... ¡lo que quieras!
+* A continuación se puede observar las 57 respuestas:
 
-## Consideraciones generales
+    ![Encabezado](https://user-images.githubusercontent.com/47750982/56270518-f3fb6300-60bb-11e9-876f-c43a77017ca1.png)
 
-* Este proyecto se debe resolver en equipos de hasta 4 personas.
-* Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-* Tiempo para completar el reto: 3 días.
-* Habrán dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
+    ![Pregunta 1](https://user-images.githubusercontent.com/47750982/56270631-31f88700-60bc-11e9-861c-618811974d48.png)
 
-## Objetivos de aprendizaje
+    En el gráfico anterior se puede observar que los usuarios desean una plataforma web que les recomiende una película y/o serie.
 
-* Enfrentarte a un reto de corta duración en el que pongas en práctica todo
-lo aprendido hasta ahora.
-* Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-personas en un equipo de trabajo, mayor complejidad para: tener un entendimiento
-común, seguir el flujo de trabajo, buscar consensos, etc.
+    ![Pregunta 2](https://user-images.githubusercontent.com/47750982/56270642-3de44900-60bc-11e9-8b5c-8c090ee73cc8.png)
 
-## Parte Obligatoria
+    Ésta pregunta tenía como objetivo conocer a que público nos ibamos a dirigir y que características tendría nuestra plataforma web.
 
-* Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-y las inspiraciones utilizadas para definir el producto.
-* Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-proyecto.
-* El producto deberá presentarse publicado en github pages.
+    ![Pregunta 3](https://user-images.githubusercontent.com/47750982/56270659-489ede00-60bc-11e9-924d-b4b71c58f020.png)
 
-## Consideraciones técnicas
+    Ésta pregunta nos sirvió para poder conocer el tipo de filtro de deberíamos considerar al momento de crear nuesta web.
 
-* El diseño visual de los componentes es de libre elección de las estudiantes,
-sin embargo, si no quieren crearlo desde cero, pueden utilizar el que
-propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/view).
-* Deberán usar al menos un framework de css.
+    ![Pregunta 4](https://user-images.githubusercontent.com/47750982/56270674-55bbcd00-60bc-11e9-8ff6-fefac65f5887.png)
 
-## Reglas de las presentaciones 
+    Ésta pregunta nos ayudó a elegir que información debería contener cada película y/o serie que elijamos.
 
-* Cada squad tendrá 5 minutos para presentar su demo y 5 minutos para recibir preguntas.
+    ![Pregunta 5](https://user-images.githubusercontent.com/47750982/56270702-61a78f00-60bc-11e9-834f-425cb2998d13.png)
 
-* Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
+    Ésta pregunta nos ayudó para poder conocer que de forma podríamos ordenar nuestra lista de películas y/o series.
 
-## Horario
+* A partir de las respuestas se realizaron:
 
-|       |  Lunes            | Martes                       | Miércoles                     | 
-|------ | ------------------| ---------------------------- | ----------------------------- | 
-| 8:00  | Kick off hackaton | Daily por squad              |   Hackeo                      |      
-| 9:00  | Sesión de planificación  | Hackeo                |   Detalles finales            | 
-| 10:00 | Hackeo            | Compartir link de aplicación | Feria de demostraciones       |
-| 11:00 |                   | Presentación y Feedback      | Presentación de mejores squads|    
-| 12:00 |                   |                              |     Deliberación del jurado   |                                
-|>13:00 |                   |                              |                               |                                
-| 20:00 |                   |                              |                               |                       
+    - Historias de Usuarios.    
+    - Prototipado de Baja Calidad.    
+    - Prototipado de Alta Calidad (Test de Usabilidad).
+    
+2. Historias de usuario (Definición de terminado, criterios de aceptación)
 
-## Tips para la organización de trabajo entre UX y Front end 
+    1. Yo como usuari@ de una librería de películas quiero buscar mi película/serie por nombre.
 
-* Las UX y FE entienden en conjunto el reto en el que van a trabajar, se organizan y arman sus primeros bocetos.
-* Con los primeros bocetos/ideas, las FE pasan a crear su ambiente de desarrollo y a crear componentes atómicos que luego les sea fácil personalizar con CSS y utilizar para crear interfaces más complejas. Además, las FE empiezan también a trabajar en la lógica de la aplicación. Mientras tanto, las UX crean una guía de estilos, los flujos de usuarios, hacen un prototipo más completo y lo testean.
-* Las UX comparten el prototipo testeado, para que el equipo empiece a personalizar los componentes y a ponerlos en conjunto.
-* Las UX hacen QA y testing con los releases que vayan haciendo las FE.
-* Planifiquen, historias de usuario y definition of done son importantísimos.
-* Usen las ceremonias ágiles para saber en que van como equipo, dailys y retrospectivas diarias son esenciales.
-* Iteren, iteren, iteren.
+        **Criterios de aceptación:**
 
-## ¿Qué es la Feria de demos?
+        - La página web debe tener una pantalla de Bienvenida que redirija al usuario a la lista de películas y/o series.
+        - El usuario puede visualizar en una nueva pantalla a las películas y/o series. (Nombre e imagen). 
+        - El usuario puede visualizar un menú de navegación donde se muestre el LOGO.
+        - El usuario puede (solo) visualizar botones que muestre las opciones de orden y filtrado del contenido.
 
-La feria de demos se realizará el día de las presentaciones, consiste en la dinámica de “speed dating”, cada squad presentará su demo durante 3 minutos a un grupo de personas, entre ellos los jurados de la Hackathon. Luego de los 3 minutos sonará una chicharra y el grupo de personas rotará al siguiente squad, de esta forma deberán presentar durante una hora. 
+        **Definición de terminado:**
 
-* Las demos no deben durar más de 3 minutos y deben mostrar el producto y las tecnologías usadas.
-* Los asistentes van a votar por los 5 equipos finalistas, quienes tendrán la oportunidad de hacer su demo a todo el público para poder elegir un ganador. 
+        - Prototipo de baja fidelidad (lápiz y papel)
+        - Estructura HTML básica:        
+            a. Pantalla de bienvenida            
+            b. Input del botón que redirige a la página de películas y/o series.            
+            c. Pantalla de películas y/o series.          
+            d. Crear un div que va a contener las cards de películas y/o series.         
+            e. Nav-bar del menú de navegación            
+            f. Button de orden y filtrado
+        - JS:        
+            a. Función que recorre la data para crear un nuevo array.            
+            b. Nuevo array contiene los nombres e imágenes de películas y/o series.            
+            c. Template para imprimir en pantalla los datos de cada de película y/o serie.                   
+        - CSS:        
+            a. Formato a menú de navegación, fondo oscuro.            b. Background-image de **CINEMATIVA**.            
+            c. Separar cada card responsive.            
+        
+    2. Yo como usuari@ de una librería de películas quiero filtrar mi data según el tipo.
+
+        **Criterios de aceptación:**
+
+        - El usuario puede filtrar a las películas y/o series según su tipo.
+        
+        **Definición de terminado:**
+
+        - JS:        
+            a. Extraer información de la data: tipo.     
+            b. Función que permita filtrar por tipo.           
+        - HTML:        
+            a. Nav-bar debajo del menú principal con 2 button de Movies y Series.          
+        - CSS:        
+            a. Background-image de **CINEMATIVA**            
+            b. Separar cada card responsive            
+        
+    3. Yo como usuari@ de una librería de películas quiero ordenar mi película/serie A - Z/Z - A.
+
+       **Criterios de aceptación:**
+
+        - El usuario puede ordenar a las películas y/o series según A-Z/Z-A.
+        
+        **Definición de terminado:**
+
+        - JS:        
+            a. Extraer información de la data: Title.     
+            b. Función que permita ordenar de A-Z/Z-A.           
+        - HTML:        
+            a. Nav-bar debajo del menú principal con 2 button de A-Z y Z-A.          
+        - CSS:        
+            a. Background-image de **CINEMATIVA**            
+            b. Separar cada card responsive  
+
+    4. Yo como usuari@ de una librería de películas al momento de poder elegir quiero visualizar el nombre, imagen, año y tipo.
+
+        **Criterios de aceptación:**
+
+        - El usuario puede ingresar el nombre de la película y/o serie que esté buscando.
+        - El usuario puede visualizar la información de la película y/o serie buscada.
+
+        **Definición de terminado:**
+
+        - JS:        
+            a. Función que recorre la data para crear un nuevo array.            
+            b. Nuevo array contiene información completa de la película y/o serie elegida.                    
+        - HTML:        
+            a. Input que va a contener el nombre de la película y/o serie buscada.            
+            b. Modal que redireccionará a la información de la película y/o serie elegida.       
+        - CSS:        
+            a. Información del campeón es responsive.
+        - La madre ha dado “merge” al código en el repositorio de Github.
+
+3. Prototipado de Baja Calidad:
+
+    * Pantalla de Inicio
+
+    ![Pantalla de Inicio - PBF](https://user-images.githubusercontent.com/47750982/56271865-0f1ba200-60bf-11e9-87a1-ae8d2c319b3b.png)
+
+    * Pantalla de Bienvenida
+
+    ![Pantalla de Bienvenida - PBF](https://user-images.githubusercontent.com/47750982/56271901-235f9f00-60bf-11e9-9cbf-e7b3cc492e66.png)
+
+    * Pantalla de Películas y/o Series
+
+    ![Pantalla de películas - PBF](https://user-images.githubusercontent.com/47750982/56271924-34101500-60bf-11e9-8e55-967f3e5bdf33.png)
+
+    * Información de Películas y/o Series
+
+    ![Pantalla de Información - PBF](https://user-images.githubusercontent.com/47750982/56271981-56a22e00-60bf-11e9-80f8-07fc7d2b6267.png)
+
+4. Prototipo de Alta Fidelidad:
+
+    **DESKTOP**
+
+    * Pantalla de Inicio
+
+    ![Página de Inicio](https://user-images.githubusercontent.com/47750982/56272015-7174a280-60bf-11e9-9f90-2bdaefa09a69.png)
+
+    * Pantalla de Bienvenida
+
+    ![Keyword](https://user-images.githubusercontent.com/47750982/56272032-818c8200-60bf-11e9-8165-2bf90d2abfcb.png)
+
+    * Pantalla de Lista de Películas y/o Series
+
+    ![List](https://user-images.githubusercontent.com/47750982/56272096-a680f500-60bf-11e9-9b20-2ed293f34804.png)
+
+    * Información de Películas y/o Series
+
+    ![Pantalla de Información](https://user-images.githubusercontent.com/47750982/56272150-bac4f200-60bf-11e9-8dad-fac9eb43f899.png)
+
+    * Pantalla de Filtrado: Movies
+
+    ![Movies](https://user-images.githubusercontent.com/47750982/56272188-cf08ef00-60bf-11e9-876d-04f1549e2460.png)
+
+    * Pantalla de Ordenado: A-Z
+
+    ![A-Z](https://user-images.githubusercontent.com/47750982/56272194-d16b4900-60bf-11e9-9626-64e1a4f692b5.png)
+
+    **Link en Figma** --> [Figma](https://www.figma.com/proto/UE8PQ7Wr4z3DBuS7hhhe8cPT/Cinemativa?node-id=0%3A1&scaling=scale-down)
+
+  
+5. Test de Usabilidad:
+
+    **SUGERENCIAS:**
+
+    **Desktop:**
+
+    Wendy Condor:
+    -	El logo debería de ser serio.
+    -	Cambiar el color del menú. (color claro).
+
+    Johanna Yucra:
+    -	Pensó que el Random era un botón. 
+
+    Nikol Panebra:
+    -	Eliminar los bordes.
+    -	Agrandar el nombre del logo.
+    -	Poner un solo tipo de letra a todo.
+    -	Sacar el Random.
+    -	Que sea sólido el fondo de la pantalla de Información.
+
+    Narda Crocco:
+    -	Quitar bordes.
+    -	Eliminar la primera pantalla.
+    -	Lo botones sean más pequeños.
+   
+    **SOLUCIÓN:**
+
+    **Desktop:**
+
+    * *Se eliminó la primera pantalla donde aparecía el Random.*
+    * *Se eliminó los bordes.
+    Se agrandó el nombre del logo.*
+    * *Se puso un sólo tipo de letra.*
+    * *El tamaño de los botones se redujo.*
+
+
+6. Nuevo Portotipo de Alta Fidelidad:
+
+    **DESKTOP**
+
+    * Pantalla de Bienvenida
+
+    ![Keyword](https://user-images.githubusercontent.com/47750982/56272606-b51bdc00-60c0-11e9-84d3-425c62bfe4d6.png)
+
+    * Pantalla de Lista de Películas y/o Series
+
+    ![List](https://user-images.githubusercontent.com/47750982/56272652-c7961580-60c0-11e9-8121-ba76a6139369.png)
+
+    * Pantalla de Información
+
+    ![Pantalla de Información](https://user-images.githubusercontent.com/47750982/56272706-df6d9980-60c0-11e9-94a6-70090441c850.png)
+
+    * Pantalla de Filtrado: Movies
+
+    ![Movies](https://user-images.githubusercontent.com/47750982/56272744-f57b5a00-60c0-11e9-8450-beeb152e90ea.png)
+
+    * Pantalla de Ordenado: A-Z
+
+    ![A-Z](https://user-images.githubusercontent.com/47750982/56272751-f7451d80-60c0-11e9-9814-b95046d76f10.png)
+
+    **Link en Figma** --> [Figma](https://www.figma.com/proto/XUchqMc1WejjeKK9Ngc35m/Cinemativa-(Oficial)?scaling=scale-down)
+
+    
+
+    
+**Created by Ninoska, Yenifer & Pilar**

@@ -120,7 +120,7 @@ const getDataDownPoke = (data) => {
 }
 const searchTitle = document.getElementById("searchTitle");
 const AzButton = document.getElementById("AzButton")
-const title = "game of thrones"
+
 function traer(title) {
   fetch(`https://www.omdbapi.com/?s="${title}"&apikey=ea8492c7 `)
     .then(resp => { return resp.json() })

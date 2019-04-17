@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    left: 0;
+}
+
+.sectionWelcome{
+    padding: 8%;
+    padding-top: 29%;
+}
+.h1Welcome{
+    text-align: center;
+
+}
+.titleKeyword{
+    text-align: center;
+}
+.divOfform {
+flex-direction: column;}
+@media (min-width: 660px) {
+    .form-control{
+
+    margin: 3%;
+    width: 57%!important;
+}
+.sectionWelcome {
+    padding: 5%;
+    padding-top: 6%;
+}
+.btn{
+    padding: 12px !important;
+}
+.h1Welcome {
+    text-align: center;
+    font-size: 65px;
+}
+}
+
+@media (min-width: 1020px) {
+    .sectionWelcome {
+        padding: 5%;
+        padding-top: 3%;
+    }
+}

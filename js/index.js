@@ -19,7 +19,12 @@ const randomMovieArray = ["skins",
 "The Shape of Water",
 "In the Heart of the Sea",
 "The Chainsmokers: Closer Feat. Halsey",
-"Kali"];
+"Kali",
+"High School Musical",
+"Harry Potter and the Deathly Hallows: Part 2",
+"Breaking Bad",
+"The Avengers",
+"The Pursuit of Happyness"];
 let randomNumber = Math.floor((Math.random()*randomMovieArray.length )-1);
 console.log(randomNumber);
 const randomMovie = randomMovieArray[randomNumber];

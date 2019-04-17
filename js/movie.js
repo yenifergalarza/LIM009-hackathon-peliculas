@@ -9,17 +9,30 @@ btnSearch.addEventListener('click', () => {
 });
 const drawMovie = element => {
   const html = `
-  <div class="card">
-  <img src="${element.Poster}" class="card-img-top" > 
-  <div class="card-body card-header">
+  <a href="#openModal" class="card">   
+  <img src="${element.Poster}" class="card-img-top"> 
+  <div class="card-body">
   <p class="card-title whiteText" >${element.Title}</p>
   </div>  
-  <ul class="list-group list-group-flush">
-  <li class="list-group-item" > Tipo : ${element.Type}</li>
-  <li class="list-group-item" > Año : ${element.Year}</li>
-  <li class="list-group-item" > ImdbID : ${element.imdbID}</li>
-  </ul>
-  </div> 
+  </a>
+
+  <div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+   
+    <div class="card widthModal" >
+    <img src="${element.Poster}" class="card-img-top " > 
+    <div class="card-body card-header">
+    <p class="card-title whiteText">${element.Title}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item" > Tipo : ${element.Type}</li>
+    <li class="list-group-item" > Año : ${element.Year}</li>
+    <li class="list-group-item" > ImdbID : ${element.imdbID}</li>
+    </ul>
+    </div> 
+  </div>
+</div>
   `;
   conteiner.insertAdjacentHTML('beforeEnd', html);
 };

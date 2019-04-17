@@ -16,22 +16,21 @@ btnSearch.addEventListener('click', () => {
 
 let btnMovies = document.getElementById('btnMovies');
 btnMovies.addEventListener('click', () => {
-    conteiner.innerHTML = '';
-    let Busqueda = search.value;
-    let btnElection = btnMovies.value;
-    const SearchMovie = encodeURIComponent(Busqueda);
-    window.callData(SearchMovie, btnElection);
+  conteiner.innerHTML = '';
+  let Busqueda = search.value;
+  let btnElection = btnMovies.value;
+  const SearchMovie = encodeURIComponent(Busqueda);
+  window.callData(SearchMovie, btnElection);
 
 });
 let btnSeries = document.getElementById('btnSeries');
 btnSeries.addEventListener('click', () => {
-    conteiner.innerHTML = '';
-    let Busqueda = search.value;
-    let btnElection = btnSeries.value;
-    const SearchMovie = encodeURIComponent(Busqueda);
-    window.callData(SearchMovie, btnElection);
+  conteiner.innerHTML = '';
+  let Busqueda = search.value;
+  let btnElection = btnSeries.value;
+  const SearchMovie = encodeURIComponent(Busqueda);
+  window.callData(SearchMovie, btnElection);
 })
-
 
 const drawMovie = element => {
   const html = `
@@ -159,21 +158,24 @@ function traer(title) {
     .then(data => getDataUpPoke(data.Search))
     .catch(error => console.log("Error", error)).catch(error => console.log("Error", error))
 };
- AzButton.addEventListener("click", () => { 
-  
+AzButton.addEventListener("click", () => {
+
   const search = document.getElementById('searchText').value;
-  const SearchMovie = encodeURIComponent(search); 
-  traer(SearchMovie) });
+  const SearchMovie = encodeURIComponent(search);
+  traer(SearchMovie)
+});
+
 function traer1(title) {
   fetch(`https://www.omdbapi.com/?s="${title}"&apikey=ea8492c7`)
     .then(resp => { return resp.json() })
     .then(data => getDataDownPoke(data.Search))
     .catch(error => console.log("Error", error))
 };
+
 const ZaButton = document.getElementById("ZaButton");
 ZaButton.addEventListener("click",
   () => {
-   
     const search = document.getElementById('searchText').value;
-  const SearchMovie = encodeURIComponent(search);  
-    traer1(SearchMovie) }); 
+    const SearchMovie = encodeURIComponent(search);
+    traer1(SearchMovie)
+  }); 

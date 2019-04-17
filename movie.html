@@ -2,59 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/movie.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/movie.css">
 </head>
 
 <body>
-  <main>
+    <main>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2 busq" type="text" placeholder="Search" aria-label="nombre de peli"
-          id="searchText">
-        <input type="button" value="Search" class="btn btn-light my-2 my-sm-0" id="btnSearch">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 busq" type="text" placeholder="Search" aria-label="nombre de peli" id="searchText">
+                <input type="button" value="Search" class="btn btn-light my-2 my-sm-0" id="btnSearch">
 
 
-      </form>
-      <div id="Conteiner" class="cont_search"></div>
-    </nav>
-    <nav class="navbar navbar-light bg-light flex-nav">
+            </form>
+            <div id="Conteiner" class="cont_search"></div>
+        </nav>
+        <nav class="navbar navbar-light bg-light flex-nav">
+            <form class="form-inline my-2 my-lg-0">
+                <a class="navbar-brand" href="#"> Filter by : </a>
+                <div>
+                    <input type="button" value="movie" class="btn btn-outline-secondary my-2 my-sm-0" id="btnMovies">
+                    <input type="button" value="series" class="btn btn-outline-secondary my-2 my-sm-0" id="btnSeries">
 
-      <form class="form-inline my-2 my-lg-0">
-        <a class="navbar-brand" href="#"> Order by : </a>
-        <div>
-          <input type="button" value="A - Z " class="btn btn-outline-secondary my-2 my-sm-0" id="AzButton">
-          <input type="button" value="Z -A  " class="btn btn-outline-secondary my-2 my-sm-0" id="ZaButton">
+                </div>
+                <div>
+
+                </div>
+
+            </form>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="navbar-brand" href="#"> Order by : </a>
+                <div>
+                    <input type="button" value="A - Z " class="btn btn-outline-secondary my-2 my-sm-0" id="AzButton">
+                    <input type="button" value="Z -A  " class="btn btn-outline-secondary my-2 my-sm-0" id="ZaButton">
+
+                </div>
+                <div>
+
+                </div>
+
+            </form>
+
+
+        </nav>
+
+
+        <div id="rootCard" class="row container-fluid">
+
+
 
         </div>
-        <div>
 
-        </div>
+    </main>
+    <script src="js/app.js"></script>
 
-      </form>
-
-
-    </nav>
-
-
-    <div id="rootCard" class="row container-fluid">
-
-
-
-    </div>
-
-  </main>
-  <script src="js/app.js"></script>
-
-  <script src="./js/movieData.js"></script>
-  <script src="./js/movie.js"></script>
+    <script src="./js/movieData.js"></script>
+    <script src="./js/movie.js"></script>
 </body>
 
 </html>

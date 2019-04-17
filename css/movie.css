@@ -10,6 +10,8 @@ body{
     background-size: cover;
 }
 
+
+.divMovieAndSeries { display: flex !important;}
 /* body{
     background-image: linear-gradient(to bottom, #000000db 0%,#000000db 100%), url(../assets/peliculas_marvel_proximos_estrenos_2019_9226_800x533.jpg);
 } */
@@ -51,6 +53,10 @@ height: 52% !important;}
     }
 }
 
+
+#ZaButton{
+    margin-right: 18px;
+}
 @media (min-width: 420px) {
     .card {
         
@@ -64,6 +70,9 @@ height: 52% !important;}
         width: 25% !important;
         
          margin-left: 3% !important;
+    }
+    #AzButton{
+        margin-right: 13px;
     }
 }
 
@@ -109,11 +118,10 @@ estilos modal  */
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#dadada6e,#000000e8,#000000e8);
+    box-shadow: -4px 5px 22px 12px rgba(77, 75, 75, 0.75);
+  
   -webkit-transition: opacity 400ms ease-in;
 -moz-transition: opacity 400ms ease-in;
 transition: opacity 400ms ease-in;
@@ -162,3 +170,15 @@ top: -67px;
     padding-top: 0;
     padding-bottom: 0;
 }
+.blackBack{
+    background: #00000007;
+}
+
+
+#AzButton {
+    margin-right: 5px;
+}
+
+
+.form-inline {
+    justify-content: center!important;}

@@ -1,12 +1,38 @@
 const btnSearch = document.getElementById('btnSearch');
+
+let search = document.getElementById('searchText');
 const conteiner = document.getElementById('rootCard');
 btnSearch.addEventListener('click', () => {
+  const elemento = document.getElementById("hideAndShow");
+  elemento.className = ``;
+  elemento.className += " displayNone ";
+
   conteiner.innerHTML = '';
   const search = document.getElementById('searchText').value;
   const SearchMovie = encodeURIComponent(search);
   window.getConnection(SearchMovie);
   limpiar();
 });
+
+let btnMovies = document.getElementById('btnMovies');
+btnMovies.addEventListener('click', () => {
+    conteiner.innerHTML = '';
+    let Busqueda = search.value;
+    let btnElection = btnMovies.value;
+    const SearchMovie = encodeURIComponent(Busqueda);
+    window.callData(SearchMovie, btnElection);
+
+});
+let btnSeries = document.getElementById('btnSeries');
+btnSeries.addEventListener('click', () => {
+    conteiner.innerHTML = '';
+    let Busqueda = search.value;
+    let btnElection = btnSeries.value;
+    const SearchMovie = encodeURIComponent(Busqueda);
+    window.callData(SearchMovie, btnElection);
+})
+
+
 const drawMovie = element => {
   const html = `
   <a href="#openModal" class="card">   
@@ -26,9 +52,9 @@ const drawMovie = element => {
     <p class="card-title whiteText">${element.Title}</p>
     </div>
     <ul class="list-group list-group-flush">
-    <li class="list-group-item" > Tipo : ${element.Type}</li>
-    <li class="list-group-item" > Año : ${element.Year}</li>
-    <li class="list-group-item" > ImdbID : ${element.imdbID}</li>
+    <li class="list-group-item blackBack whiteText" > Tipo : ${element.Type}</li>
+    <li class="list-group-item blackBack whiteText" > Año : ${element.Year}</li>
+    <li class="list-group-item blackBack whiteText" > ImdbID : ${element.imdbID}</li>
     </ul>
     </div> 
   </div>
@@ -92,9 +118,9 @@ const eachMovieSeries = (movie) => {
           <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
           </div>
           <ul class="list-group list-group-flush">
-          <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
-          <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
-          <li class="list-group-item" > ID : ${movie[cinemaCount].imdbID}</li>
+          <li class="list-group-item blackBack  whiteText" > Tipo : ${movie[cinemaCount].Type}</li>
+          <li class="list-group-item blackBack whiteText" > Año : ${movie[cinemaCount].Year}</li>
+          <li class="list-group-item blackBack whiteText" > ID : ${movie[cinemaCount].imdbID}</li>
           </ul>
           </div> 
         </div>
@@ -118,6 +144,12 @@ const getDataDownPoke = (data) => {
   }
   return downCinema();
 }
+
+
+
+
+
+
 const searchTitle = document.getElementById("searchTitle");
 const AzButton = document.getElementById("AzButton")
 
@@ -128,6 +160,7 @@ function traer(title) {
     .catch(error => console.log("Error", error)).catch(error => console.log("Error", error))
 };
  AzButton.addEventListener("click", () => { 
+  
   const search = document.getElementById('searchText').value;
   const SearchMovie = encodeURIComponent(search); 
   traer(SearchMovie) });
@@ -140,6 +173,7 @@ function traer1(title) {
 const ZaButton = document.getElementById("ZaButton");
 ZaButton.addEventListener("click",
   () => {
+   
     const search = document.getElementById('searchText').value;
   const SearchMovie = encodeURIComponent(search);  
     traer1(SearchMovie) }); 

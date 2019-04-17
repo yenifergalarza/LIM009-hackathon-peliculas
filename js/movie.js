@@ -33,30 +33,61 @@ const eachMovieSeries = (movie) => {
   for (let cinemaCount = 0; cinemaCount < movie.length; cinemaCount++) {
     if (movie[cinemaCount].Poster !== "N/A") {
       printCinema.innerHTML += `
-         <div class="card">
-       <img src="${movie[cinemaCount].Poster}" class="card-img-top" > 
-       <div class="card-body card-header">
-       <p class="card-title whiteText" >${movie[cinemaCount].Title}</p>
-       </div>  
-       <ul class="list-group list-group-flush">
-       <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
-       <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
-       <li class="list-group-item" > ImdbID : ${movie[cinemaCount].imdbID}</li>
-       </ul>
-       </div> `
+      <a href="#openModal" class="card">   
+      <img src="${movie[cinemaCount].Poster}" class="card-img-top" > 
+      <div class="card-body">
+      <p class="card-title whiteText" >${movie[cinemaCount].Title}</p>
+      </div>  
+     
+      </a>
+
+      <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+       
+        <div class="card widthModal" >
+        <img src="${movie[cinemaCount].Poster}" class="card-img-top " > 
+        <div class="card-body card-header">
+        <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
+        <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
+        <li class="list-group-item" > ImdbID : ${movie[cinemaCount].imdbID}</li>
+        </ul>
+        </div> 
+      </div>
+    </div>
+
+        `
     } else {
       printCinema.innerHTML += `
-         <div class="card" ">
-       <img src="./assets/notFound.jpg" class="card-img-top" > 
-       <div class="card-body card-header">
-       <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
-       </div>
-       <ul class="list-group list-group-flush">
-       <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
-       <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
-       <li class="list-group-item" > ImdbID : ${movie[cinemaCount].imdbID}</li>
-       </ul>
-       </div> `
+      <a href="#openModal">    <div class="card" ">
+      <img src="./assets/notFound.jpg" class="card-img-top" > 
+      <div class="card-body">
+      <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
+      </div>
+      </a>
+
+      <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+        
+          <div class="card widthModal" >
+          <img src="./assets/notFound.jpg" class="card-img-top" > 
+          <div class="card-body card-header">
+          <p class="card-title whiteText">${movie[cinemaCount].Title}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+          <li class="list-group-item" > Tipo : ${movie[cinemaCount].Type}</li>
+          <li class="list-group-item" > Año : ${movie[cinemaCount].Year}</li>
+          <li class="list-group-item" > ID : ${movie[cinemaCount].imdbID}</li>
+          </ul>
+          </div> 
+        </div>
+      </div>
+
+     `
     }
   }
 }

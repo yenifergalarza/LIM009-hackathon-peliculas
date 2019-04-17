@@ -1,0 +1,69 @@
+.h1Welcome {
+    font-size: xx-large;
+    text-align: center;
+}
+.widthModal {
+ 
+    left: -26px;
+}
+.card{
+    box-shadow: -4px 5px 22px 12px rgba(77, 75, 75, 0.75);
+    background: -webkit-linear-gradient(#dadada6e,#000000e8,#000000e8);
+}
+
+.blackWall{
+    background: #000000c9 !important;
+    
+    
+}
+@media (min-width: 374px) {
+    .widthModal {
+        left: -2%;
+    }
+}
+
+
+@media (min-width: 424px){
+.widthModal {
+    left: 13%;
+}
+.h1Welcome {
+    font-size: 43px;
+  
+    padding: 25px;
+}}
+
+
+@media (min-width: 764px){
+    .widthModal {
+        left: 24%;
+        width: 53% !important;
+    }
+    .card-title {
+        margin-top: 1.75rem;
+        font-size: 31px;
+    }
+    
+.list-group {
+    font-size: 24px;
+}
+.widthModal .card-img-top { 
+
+    left: 67px !important;
+    width: 66% !important;
+    margin-top: 33px;
+} 
+}
+@media (min-width: 1024px){
+    .card-title {
+      
+        font-size: 37px;
+    }
+.h1Welcome {
+    font-size: 67px;}
+
+    .list-group {
+        font-size: 27px;
+        padding-left: 20px;
+        padding-right: 20px;}
+}

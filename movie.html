@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Cinemativa || Find Movies and Series</title>
+    <link rel="shortcut icon" href="./assets/video-camera.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/movie.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -22,27 +23,27 @@
             <input class="form-control mr-sm-2 busq" type="text" placeholder="Search" aria-label="nombre de peli"
               id="searchText">
               <div class="buttonsRecommend">
-            <input type="button" value="Search" class="btn btn-light my-2 my-sm-0" id="btnSearch">
+            <input type="button" value="Search" class="btn btn-outline-light my-2 my-sm-0 btnSmall" id="btnSearch">
     
-    <a href="./index.html"> <input type="button" value="recommend" class="btn btn-light my-2 my-sm-0" id="btnSearch"></a>
+    <a href="./index.html"> <input type="button" value="Recommend" class="btn btn-outline-light my-2 my-sm-0 btnSmall" id="btnSearch"></a>
           </form>
          </div>
         </nav>
-        <nav class="navbar navbar-light bg-light flex-nav">
+        <nav class="navbar navbar-light bg-light flex-nav  displayNone" id="navBarOrder">
     
           <form class="form-inline my-2 my-lg-0">
            
-            <div class="divMovieAndSeries">
+            <div class="divMovieAndSeries"  >
                 <div> <a class="navbar-brand whiteText" href="#"> Order by : </a>
                     <div>
-              <input type="button" value="A - Z " class="btn btn-outline-secondary my-2 my-sm-0" id="AzButton">
-              <input type="button" value="Z -A  " class="btn btn-outline-secondary my-2 my-sm-0" id="ZaButton"></div></div>
+              <input type="button" value="A - Z " class="btn btn-outline-secondary my-2 my-sm-0 btnAzZa" id="AzButton">
+              <input type="button" value="Z -A  " class="btn btn-outline-secondary my-2 my-sm-0 btnAzZa" id="ZaButton"></div></div>
               <form class="form-inline my-2 my-lg-0">
               
                 <div >  <a class="navbar-brand whiteText" href="#"> Filter by : </a>
                     <div>
-                    <input type="button" value="movie" class="btn btn-outline-secondary my-2 my-sm-0" id="btnMovies">
-                    <input type="button" value="series" class="btn btn-outline-secondary my-2 my-sm-0" id="btnSeries">
+                    <input type="button" value="movie" class="btn btn-outline-secondary my-2 my-sm-0 btnSmall" id="btnMovies">
+                    <input type="button" value="series" class="btn btn-outline-secondary my-2 my-sm-0 btnSmall" id="btnSeries">
                 </div>
                 </div>
             </form>
@@ -54,7 +55,7 @@
         <h1 class="h1Welcome whiteText">
             Welcome!!!
         </h1>
-        <p class="titleKeyword whiteText"> enter keyword to find what you want you see</p>
+        <p class="titleKeyword whiteText"> What's on at the cinema?  <br></br> Enter keyword to find what you want you see</p>
         
     </section>
         </div>

@@ -5,8 +5,9 @@ const conteiner = document.getElementById('rootCard');
 btnSearch.addEventListener('click', () => {
   const elemento = document.getElementById("hideAndShow");
   elemento.className = ``;
+  const navBarOrder = document.getElementById('navBarOrder');
   elemento.className += " displayNone ";
-
+  navBarOrder.classList.remove("displayNone");
   conteiner.innerHTML = '';
   const search = document.getElementById('searchText').value;
   const SearchMovie = encodeURIComponent(search);

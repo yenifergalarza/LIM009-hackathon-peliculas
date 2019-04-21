@@ -1,35 +1,40 @@
 /* https://www.youtube.com/watch?v=YonqjrU2btI  https://www.youtube.com/watch?v=67eJTr6_ylY   */
-.flex-nav{
+.flex-nav {
     flex-direction: row-reverse !important;
 }
-body{
-    background-image: linear-gradient(to bottom, #000000db 0%,#000000db 100%), url(../assets/deadpool-2-movie-cinema-01-3840x2400.jpg);
+
+body {
+    background-image: linear-gradient(to bottom, #000000db 0%, #000000db 100%), url(../assets/deadpool-2-movie-cinema-01-3840x2400.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.buttonsRecommend{
+.buttonsRecommend {
     justify-content: space-between;
 }
 
+.divMovieAndSeries {
+    display: flex !important;
+}
 
-
-.divMovieAndSeries { display: flex !important;}
 /* body{
     background-image: linear-gradient(to bottom, #000000db 0%,#000000db 100%), url(../assets/peliculas_marvel_proximos_estrenos_2019_9226_800x533.jpg);
 } */
 .flex-nav {
     background-color: #00000000 !important;
 }
+
 .bg-dark {
     background-color: #000411 !important;
     padding: 0.6em !important;
 }
-.row{
+
+.row {
     margin-left: 0 !important;
 }
+
 .card {
     height: 20%;
     width: 43% !important;
@@ -39,33 +44,36 @@ body{
     background: #000000c9;
 }
 
-.card-body{
+.card-body {
     padding-top: 2px;
 }
-.whiteText{
-      color: white !important;
+
+.whiteText {
+    color: white !important;
 }
-  
+
 
 .card-img-top {
-height: 52% !important;}
+    height: 52% !important;
+}
 
 @media (min-width: 299px) {
     .card {
         width: 70% !important;
         margin-left: 15% !important;
-       
+
     }
 }
 
 
-#ZaButton{
+#ZaButton {
     margin-right: 18px;
 }
+
 @media (min-width: 420px) {
     .card {
-        
-         margin-left: 6% !important;
+
+        margin-left: 6% !important;
     }
 }
 
@@ -73,10 +81,11 @@ height: 52% !important;}
 
     .card {
         width: 25% !important;
-        
-         margin-left: 3% !important;
+
+        margin-left: 3% !important;
     }
-    #AzButton{
+
+    #AzButton {
         margin-right: 13px;
     }
 }
@@ -85,11 +94,11 @@ height: 52% !important;}
 @media (min-width: 880px) {
     .card {
         width: 19% !important;
-     
+
         margin-left: 1.5% !important;
     }
-    
-    .row{
+
+    .row {
         padding-left: 7%;
         padding-right: 0%;
     }
@@ -100,62 +109,68 @@ height: 52% !important;}
 /* 
 estilos modal  */
 .modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
+
 .modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
+
+.modalDialog>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(#dadada6e,#000000e8,#000000e8);
+    background: -webkit-linear-gradient(#dadada6e, #000000e8, #000000e8);
     box-shadow: -4px 5px 22px 12px rgba(77, 75, 75, 0.75);
-  
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-top: -67px;
+
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    top: -67px;
 
 }
+
 .close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
 }
-.close:hover { background:#0c31ac; }
-.widthModal
-    {
-        width: 281px !important;
-        left: 32px;
+
+.close:hover {
+    background: #0c31ac;
+}
+
+.widthModal {
+    width: 281px !important;
+    left: 32px;
 }
 
 .widthModal .card-img-top {
@@ -168,14 +183,16 @@ top: -67px;
     margin-bottom: -1px !important;
 }
 
-.logo{
-    width: 146px;
+.logo {
+    width: 282px;
 }
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
 }
-.blackBack{
+
+.blackBack {
     background: #00000007;
 }
 
@@ -186,4 +203,16 @@ top: -67px;
 
 
 .form-inline {
-    justify-content: center!important;}
+    justify-content: center !important;
+}
+
+.navbar {
+    padding-bottom: 3px !important;
+    padding-top: 0px !important;
+}
+
+.btn {
+    border-radius: 3px !important;
+
+    padding: 1px 8px !important;
+}

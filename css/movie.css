@@ -203,6 +203,11 @@ estilos modal  */
 
 
 .form-inline {
+
+    justify-content: center!important;}
+
+  
+
     justify-content: center !important;
 }
 
